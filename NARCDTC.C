@@ -2,6 +2,9 @@
  * NARCDETECT - Drug Detection Time Calculator for Oral Fluid Tests
  * Turbo C Version - Compatible with Turbo C 1.0/2.0
  * 
+ * By: Mickey W. Lawless
+ * Date: August 11, 2025
+ *
  * Calculates detection window for various drugs including:
  * - Accumulation effects from chronic use
  * - Route of administration variables
@@ -1036,4 +1039,5 @@ int min_int(int a, int b)
 {
     return (a < b) ? a : b;
 }
+
 
