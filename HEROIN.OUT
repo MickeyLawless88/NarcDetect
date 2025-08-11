@@ -1,0 +1,241 @@
+====================================================================
+NARCDETECT - Drug Detection Time Calculator v2.0
+FOR ORAL FLUID (SALIVA) TESTING
+====================================================================
+
+ESTIMATES TIME UNTIL NON-DETECTABLE
+BASED ON PHARMACOKINETIC PARAMETERS
+INCLUDES CHRONIC USE ACCUMULATION
+AND ROUTES OF ADMINISTRATION
+WITH NMR SPECTRUM SIMULATION
+
+AVAILABLE DRUGS BY TYPE:
+====================================================================
+SYNTHETIC OPIOIDS:     NATURAL OPIOIDS:       STIMULANTS:
+
+  FENTANYL               MORPHINE               AMPHETAMINE
+  NITAZENES              CODEINE                METHAMPHETAMINE
+  HYDROMORPHONE          DIAMORPHINE (HEROIN)   DEXTROAMPHETAMINE
+  OXYCODONE              PETHIDINE
+  HYDROCODONE            METHADONE
+  DEXTROPROPOXYPHENE
+
+DEPRESSANTS:           PSYCHEDELICS:          OTHER:
+
+  BARBITURATES           LSD                    ALCOHOL
+  BENZODIAZEPINES        MESCALINE              KETAMINE
+  METHAQUALONE           PSILOCYBIN             GHB
+                         DMT
+====================================================================
+
+Enter drug name: HEROIN
+AVAILABLE ROUTES OF ADMINISTRATION:
+ORAL, INTRAVENOUS, INTRAMUSCULAR,
+SUBCUTANEOUS, INTRANASAL, INHALATION,
+SUBLINGUAL, TRANSDERMAL, RECTAL,
+BUCCAL, TOPICAL
+
+Enter route of administration: IV
+Enter dosage in mg: 1000 
+Enter body weight in kg: 76
+Enter age in years: 28
+Metabolism rate (1=SLOW, 2=NORMAL, 3=FAST): 3
+Duration of use in hours (24.0=1 day): 48 
+====================================================================
+  PLASMA CONCENTRATION vs TIME WITH ACCUMULATION
+       (INCLUDES CHRONIC USE BUILD-UP EFFECTS)
+       (ADJUSTED FOR ROUTE OF ADMINISTRATION)
+====================================================================
+
+Time range: 0 to 96.0 hours
+Maximum concentration: 13.68 ng/mL
+Cutoff level: 10.00 ng/mL
+
+         +         +         +         +         +         +         +         +     C   +         +         +       A 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A                                                                                    C                                 
+A        +         +         +         +         +         +         +         +     C   +         +         +         
+
+LEGEND: A = CONCENTRATION CURVE
+        C = DETECTION CUTOFF THRESHOLD
+        + = TIME GRID MARKERS
+
+ANALYSIS: Time to non-detection = 0.05 hours
+          Peak concentration = 13.68 ng/mL
+          Duration of use = 48.00 hours
+
+
+====================================================================
+DETECTION TIME CALCULATION FOR DIAMORPHINE
+====================================================================
+
+INPUT PARAMETERS:
+  Dosage: 1000 mg
+  Weight: 76 kg
+  Age: 28 years
+  Metabolism: FAST
+  Duration of use: 48.0 hours (2.00 days)
+  Route: INTRAVENOUS (Bioavail 100.0%, Abs rate 0.10 hr)
+
+PHARMACOKINETIC DATA:
+  Half-life: 0.2 hours
+  Cutoff: 10.0 ng/mL
+  Dosing interval: 4.0 hours
+  Number of doses: 13
+  Accumulation factor: 13.00
+  Single dose conc: 1.05 ng/mL
+  Total accum conc: 13.68 ng/mL
+  Elim rate: 5.7423 /hour
+  Steady-state conc: 1.05 ng/mL
+  Buildup to SS: 100.0%
+
+DETECTION TIME: 197 seconds
+EQUIVALENT TO: 0 hours, 3 minutes, 16 seconds
+FULL FORMAT: 0 days, 0 hours, 3 minutes, 16 seconds
+
+** IMPORTANT DISCLAIMERS **
+- Estimates based on population averages
+- Individual variation can be significant
+- Chronic use calculations are simplified
+- Assumes regular dosing intervals
+- Route-specific parameters are estimates
+- For research/educational use only
+
+Generate NMR spectrum simulation? (Y/N): Y
+====================================================================
+          1H NMR SPECTRUM SIMULATION FOR DIAMORPHINE
+       CONCENTRATION: 1000.00 NG/ML IN SAMPLE
+       CHEMICAL SHIFT RANGE: 0.0 - 12.0 PPM
+       SYNTHETIC SPECTRUM FOR IDENTIFICATION
+====================================================================
+
+Maximum intensity = 1010.20 (relative)
+Chemical shift scale: 12.0 to 0.0 PPM
+
+      12        10         8         6         4         2         0
+       |         |         |         |         |         |         |
++                   +                   +                   +                   +                  *+                   +
++                   +                   +                   +                   +                  *+                   +
++                   +                   +                   +                   +                  *+                   +
++                   +                   +                   +                   +                  *+                   +
++                   +                   +                   +                   +                  *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                   +         *        *+                   +
++                   +                   +                   +                 * +         *        *+                   +
++                   +                   +                   +                 * +         *        *+                   +
++                   +                   +                   +                 * +         *        *+                   +
++                   +                   +                   +                 * +         *        *+                   +
++                   +                   +           *  *    +                 * +         *        *+                   +
++                   +                   +           *  *    +                 * +         *        *+                   +
++                   +                   +           *  *    +                 * +         *       ***                   +
++                   +                   +           *  *    +                 * +         *       ***                   +
++                   +                   +           *  *    +                 * +         *       ***                   +
++                   +                   +           *  *    +                 * +         *       ***                   +
++                   +                   +           *  *    +                 * +        ***      ***                   +
++                   +                   +           *  *    +                 * +        ***      ***                   +
++                   +                   +           *  *    +                 * +        ***      ***                   +
++                   +                   +           *  *    +                 * +        ***      ***                   +
++                   +                   +           *  *    +                 * +        ***      ***                   +
++                   +                   +           * **    +                 * +        ***      ***                   +
++                   +                   +           ****    +                 * +        ***      ***                   +
++                   +                   +           ****    +                 * +        ***      ***                   +
++                   +                   +           *****   +                ***+        ***      ***                   +
++                   +                   +          ******   +                ***+        ***      ***                   +
++                   +                   +          ******   +                ***+        ***     ****                   +
++                   +                   +          ******   +                ***+        ***     *****                  +
++                   +                   +          ******   +                ***+       *****    *****                  +
++                   +                   +          ******   +                ***+       *****    *****                  +
++                   +                   +          ******   +                ***+       *****    *****                  +
++                   +                   +          ******   +                ***+       ******  ******                  +
++                   +                   +         ********  +               *****      ****************                 +
++                   +                   +         ********  +               *****      ****************                 +
++                   +                   +        ********** +              *******   *******************                +
++                   +                   +      **************            **********************************             +
+
+PEAK ASSIGNMENTS:
+SHIFT(PPM)  INTENSITY  WIDTH   ASSIGNMENT
+----------  ---------  -----   ----------
+    6.80       50.0     0.09   O-CH, N-CH
+    6.50       50.0     0.09   O-CH, N-CH
+    4.20       60.0     0.08   O-CH, N-CH
+    3.00       90.0     0.09   CH2, CH3 ALPHA
+    2.10      100.0     0.10   CH2, CH3 ALPHA
+
+SPECTRUM ANALYSIS:
+NUMBER OF PEAKS DETECTED: 5
+MAXIMUM PEAK INTENSITY:   1010.20
+SAMPLE CONCENTRATION:     1000.00 NG/ML
+INTEGRATION COMPLETE
+
+* = SPECTRAL PEAK    + = PPM GRID LINES
+
